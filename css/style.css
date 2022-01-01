@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+nav {
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+nav .mainMenu li a:hover {
+  background: rgb(43, 29, 134);
+}
+
+nav .openMenu {
+  font-size: 1.4rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu , .icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  color: rgb(250, 69, 237);
+  font-size: 4rem;
+}
+
+.fa-youtube:hover {
+  color: rgb(209, 47, 67);
+  font-size: 4rem;
+}
+
+.fa-shopping-cart:hover {
+  color: rgb(228, 238, 101);
+  font-size: 4rem;
+}
+
+.fa-at:hover {
+  color: rgb(82, 190, 219);
+  font-size: 4rem;
+}
+
+nav .logo {
+  cursor: pointer;
+}
+
+@media(max-width: 900px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 153, 18);
+    font-size: 4rem;
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
