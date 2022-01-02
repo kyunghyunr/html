@@ -83,7 +83,7 @@ nav .logo {
     justify-content: center;
     align-items: center;
     background: #000000;
-    transition: top 1s ease;
+    transition: all 1s ease;
     display: none;
   }
 
