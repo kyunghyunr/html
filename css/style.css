@@ -86,7 +86,7 @@ nav .mainMenu .closeMenu, .icons i {
   font-size: 4rem;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 790px) {
   nav .openMenu {
     display: block;
   }
@@ -138,13 +138,18 @@ nav .mainMenu .closeMenu, .icons i {
   height: auto;
 }
 
+.bg_img_1 {
+  width: 100%;
+  height: auto;
+}
+
 .footer {
   color: #ffffff;
   font-size: 9px;
   padding-left: 0px;
   padding-top: 100px;
-  position : relative;
-  transform : translateY(-50%);
+  position: relative;
+  transform: translateY(-50%);
   text-align: center;
   background-color: transparent;
 }
