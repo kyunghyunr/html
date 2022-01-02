@@ -2,10 +2,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 body {
   font-family: 'Black Han Sans', sans-serif;
+}
+
+.menuAll {
+  position: static;
+}
+
+nav .logo {
+  cursor: pointer;
 }
 
 nav {
@@ -51,7 +60,6 @@ nav .openMenu .bar {
   background-color: white;
 }
 
-
 nav .mainMenu .closeMenu, .icons i {
   font-size: 2rem;
   display: none;
@@ -78,10 +86,6 @@ nav .mainMenu .closeMenu, .icons i {
   font-size: 4rem;
 }
 
-nav .logo {
-  cursor: pointer;
-}
-
 @media(max-width: 900px) {
   nav .openMenu {
     display: block;
@@ -99,14 +103,13 @@ nav .logo {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-
   nav .mainMenu {
     position: fixed;
     right: -100%;
     top: 67px;
     gap: 0;
     flex-direction: column;
-    background-color: #262626;
+    background-color: ##000000;
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -114,6 +117,8 @@ nav .logo {
 
   .mainMenu.active {
     right: 0;
+    position: absolute;
+    padding-bottom: 20px;
   }
 
   nav .mainMenu li a:hover {
@@ -126,4 +131,20 @@ nav .logo {
     display: inline-block;
     padding: 12px;
   }
+}
+
+.bg_img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  color: #ffffff;
+  font-size: 9px;
+  padding-left: 0px;
+  padding-top: 100px;
+  position : relative;
+  transform : translateY(-50%);
+  text-align: center;
+  background-color: transparent;
 }
