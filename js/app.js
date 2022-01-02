@@ -12,3 +12,19 @@ document.querySelectorAll("").forEach(n => n.addEventListener("click", () => {
   navMenu.classList.remove("active");
 }))
 */
+
+
+
+
+$(window).resize(function(e){
+   if($(window).width() < 790) {
+   console.log($(window).width());
+    $("#crewimage").each(function() {
+      $(this).attr("src", "./img/artist.jpg");
+                });
+            } else if ($(window).width() >= 790) {
+                $("#crewimage").each(function() {
+                $(this).attr("src","./img/artist16_9.png");
+                });
+    }
+});
