@@ -85,8 +85,27 @@ nav .mainMenu .closeMenu, .icons i {
   color: rgb(82, 190, 219);
   font-size: 4rem;
 }
+@media (min-width: 805px) {
+  .bg_img {
+    display: none;
+  }
+  .bg_img_1 {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
 
-@media(max-width: 790px) {
+@media(max-width: 805px) {
+  .bg_img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .bg_img_1{
+    display: none;
+  }
+
   nav .openMenu {
     display: block;
   }
@@ -133,10 +152,7 @@ nav .mainMenu .closeMenu, .icons i {
   }
 }
 
-.bg_img {
-  width: 100%;
-  height: auto;
-}
+
 
 
 .footer {
