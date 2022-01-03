@@ -96,27 +96,59 @@ nav .mainMenu .closeMenu, .icons i {
 }
 */
 
-@media (min-width: 805px) {
-  .bg_img {
-    display: none;
-  }
-  .bg_img_1 {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-}
 
-@media(max-width: 805px) {
+
+@media(max-width: 700px) {
   .bg_img {
-    display: block;
     width: 100%;
     height: auto;
   }
   .bg_img_1{
     display: none;
   }
+}
+@media (min-width: 700px) {
+  .bg_img {
+    width: 700px;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    }
+    .bg_img_1{
+      display: none;
+    }
+}
 
+
+@media (min-width: 840px) {
+  .bg_img_1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+  }
+  .bg_img{
+    display: none;
+  }
+}
+
+@media (min-width: 1245px) {
+  .bg_img_1 {
+    width: 1245px;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+  }
+  .bg_img{
+    display: none;
+  }
+}
+
+
+
+
+
+@media(max-width: 839px) {
   nav .openMenu {
     display: block;
   }
@@ -162,16 +194,6 @@ nav .mainMenu .closeMenu, .icons i {
     padding: 12px;
   }
 }
-
-@media (min-width: 1405.52px) {
-  .bg_img_1 {
-    width: 1405.52px;
-    height: 790.61px;
-    display: block;
-    margin: 0px auto;
-  }
-}
-
 
 .footer {
   color: #ffffff;
