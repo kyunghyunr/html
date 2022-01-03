@@ -85,6 +85,17 @@ nav .mainMenu .closeMenu, .icons i {
   color: rgb(82, 190, 219);
   font-size: 4rem;
 }
+
+/* @media (max-width: 722px){
+  .bg_img {
+    width: 722px;
+    height: 722.55;
+    display: block;
+    margin: 0px auto;
+  }
+}
+*/
+
 @media (min-width: 805px) {
   .bg_img {
     display: none;
@@ -152,7 +163,14 @@ nav .mainMenu .closeMenu, .icons i {
   }
 }
 
-
+@media (min-width: 1405.52px) {
+  .bg_img_1 {
+    width: 1405.52px;
+    height: 790.61px;
+    display: block;
+    margin: 0px auto;
+  }
+}
 
 
 .footer {
